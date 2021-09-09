@@ -1,0 +1,172 @@
+{
+ "allow_guest_to_view": 1,
+ "autoname": "order-menu-1.###",
+ "creation": "2021-08-12 19:09:38.748173",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_1",
+  "order_menu",
+  "column_break_3",
+  "section_break_4",
+  "customer_name",
+  "order_item_id",
+  "order_item",
+  "column_break_9",
+  "paid_amount",
+  "post_date",
+  "price",
+  "outstanding_amount",
+  "section_break_13",
+  "show_payment",
+  "section_break_15",
+  "payment_detail",
+  "section_break_17",
+  "child_payment",
+  "amended_from",
+  "route",
+  "data_22"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_menu",
+   "fieldtype": "Heading",
+   "label": "Order Menu"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "order_item_id",
+   "fieldtype": "Data",
+   "label": "Order Item ID"
+  },
+  {
+   "fieldname": "order_item",
+   "fieldtype": "Data",
+   "label": "Order Item",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "post_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "label": "Outstanding Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "show_payment",
+   "fieldtype": "Button",
+   "label": "Show Payment"
+  },
+  {
+   "fieldname": "payment_detail",
+   "fieldtype": "HTML",
+   "label": "Payment Detail"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "child_payment",
+   "fieldtype": "Table",
+   "label": "Child Payment",
+   "options": "Payment Display"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order Menu Info",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "data_22",
+   "fieldtype": "Data"
+  }
+ ],
+ "has_web_view": 1,
+ "is_submittable": 1,
+ "modified": "2021-08-25 13:18:16.081512",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Order Menu Info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "route": "ordermenu",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "customer_name",
+ "track_changes": 1
+}

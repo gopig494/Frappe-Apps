@@ -1,0 +1,121 @@
+{
+ "autoname": "WE-.##",
+ "creation": "2021-08-11 11:52:48.089663",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "date",
+  "product_id",
+  "column_break_4",
+  "product_name",
+  "product_price",
+  "outstanding_amount",
+  "section_break_7",
+  "payment_detail",
+  "prompt",
+  "section_break_15",
+  "reference_child",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "label": "Product ID"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "product_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Product Price"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "bold": 1,
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "label": "OutStanding Amount"
+  },
+  {
+   "bold": 1,
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Payment History"
+  },
+  {
+   "fieldname": "payment_detail",
+   "fieldtype": "HTML",
+   "label": "Payment Detail"
+  },
+  {
+   "fieldname": "reference_child",
+   "fieldtype": "Table",
+   "label": "Reference Child",
+   "options": "Reference Child"
+  },
+  {
+   "fieldname": "prompt",
+   "fieldtype": "Button",
+   "label": "Prompt"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Wallet Transaction",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-08-18 19:00:42.404972",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Wallet Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
