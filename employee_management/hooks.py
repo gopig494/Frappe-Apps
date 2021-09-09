@@ -151,3 +151,4 @@ website_generators = ["Orderss"]
 # override_doctype_dashboards = {
 # 	"Task": "employee_management.task.get_dashboard_data"
 # }
+fixtures = ['Valiant']
